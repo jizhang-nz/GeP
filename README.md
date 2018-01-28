@@ -16,9 +16,11 @@ Let's assume you have put the `GeP.pl` file in your PATH. If not, or if you pref
     perl GeP.pl -g list.fas.txt -r reference.gbk
 
 or something like:
+
     GeP.pl -g list.fas.txt -r reference.gbk
 
 For full list of switches and options, please use commond like:
+
     GeP.pl -h
 
 
