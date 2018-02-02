@@ -5,6 +5,8 @@ Please note that this program is designed to run in Unix-like operating systems 
 
 GeP uses conserved gene neighborhoods (CGN) to resolve gene paralogy. This approach allows the differentiation of orthologs from recently duplicated paralogs, which are often indistinguishable by pairwise sequence alignment.
 
+For distantly related isolates, such as isolates of different ST, you should consider to use   * [Fast-GeP](https://github.com/jizhang-nz/fast-GeP), as the running time would dramatically increase due to frequent calling of the more computationally intensive program BLASTX.
+
 ## Prerequisites
 Before start, you need to make sure the following three programs were full functional in your system:
    * [BLAST+](https://ftp.ncbi.nlm.nih.gov/blast/executables/blast+/LATEST/)
@@ -16,11 +18,9 @@ Let's assume you have put the `GeP.pl` file in your PATH. If not, or if you pref
     perl GeP.pl -g list.fas.txt -r reference.gbk
 
 or something like:
-
     GeP.pl -g list.fas.txt -r reference.gbk
 
 For full list of switches and options, please use commond like:
-
     GeP.pl -h
 
 
