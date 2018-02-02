@@ -1,5 +1,5 @@
 # Genome Profiler (GeP)
-Genome Profiler (GeP) is a program to perform whole-genome multilocus sequence typing (wgMLST) analysis for bacterial isolates.
+Genome Profiler (GeP) is a program to perform whole-genome multilocus sequence typing (wgMLST) analysis for bacterial isolates using gene-by-gene allele-calling strategy.
 
 Please note that this program is designed to run in Unix-like operating systems such as Mac OS X or Linux.
 
