@@ -5,7 +5,7 @@ Please note that this program is designed to run in Unix-like operating systems 
 
 GeP uses conserved gene neighborhoods (CGN) to resolve gene paralogy. This approach allows the differentiation of orthologs from recently duplicated paralogs, which are often indistinguishable by pairwise sequence alignment.
 
-For distantly related isolates, such as isolates of different ST, you should consider to use   [Fast-GeP](https://github.com/jizhang-nz/fast-GeP), as the running time would dramatically increase due to frequent calling of the more computationally intensive program BLASTX.
+For resolving relationship of distantly related isolates, such as isolates of different ST, you could consider to use   * [Fast-GeP](https://github.com/jizhang-nz/fast-GeP), as the running time of GeP would dramatically increase due to frequent calling of the more computationally intensive program BLASTX.
 
 ## Prerequisites
 Before start, you need to make sure the following three programs were full functional in your system:
