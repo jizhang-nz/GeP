@@ -120,7 +120,7 @@ close REPORT;
 my($rep_list);
 if($opt_o==0){
 	if($opt_n==1){
-		print ("GeP is running in ad hoc mode ...\n") if ($opt_v == 0);
+		print ("GeP is running in ad hoc mode with designated allele sequences as reference...\n") if ($opt_v == 0);
 		open(IN, "<$opt_r") or die "Cannot open multi-fasta file!";
 		open(DIC, ">>output.gene_list.txt");
 		open(LIST, ">>gene_list.tmp");
@@ -144,7 +144,7 @@ if($opt_o==0){
 				$ntseq =~ s/.*\n//;
 				$ntseq =~ s/>//;
 				$ntseq =~ s/\s//gs;
-				$ntseq =~ lc($ntseq);
+				$ntseq = lc($ntseq);
 				$ntseqlen = length($ntseq);
 				
 				%aacode = (
@@ -171,6 +171,7 @@ if($opt_o==0){
 				$count_nt = 0;
 				foreach(@nt){
 					if($count_nt==3){
+						$codon = uc(codon);
 						$aa_base = $aacode{$codon};
 						$aaseq = $aaseq.$aa_base;
 						$count_nt = 1;
@@ -2181,6 +2182,7 @@ system ("mv *.aln.* ./aln_$T0/");
 system ("rm -f *.*hr");
 system ("rm -f *.*in");
 system ("rm -f *.*sq");
+system ("rm -f makeblastdb.*");
 
 #system ("rm -f pairwise.*.txt");
 my @files = readpipe("ls");
