@@ -171,7 +171,7 @@ if($opt_o==0){
 				$count_nt = 0;
 				foreach(@nt){
 					if($count_nt==3){
-						$codon = uc(codon);
+						$codon = uc($codon);
 						$aa_base = $aacode{$codon};
 						$aaseq = $aaseq.$aa_base;
 						$count_nt = 1;
