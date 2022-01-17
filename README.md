@@ -8,7 +8,7 @@ GeP uses conserved gene neighborhoods (CGN) to resolve gene paralogy. This appro
 GeP is best for resolving relationship of closely related isolates, such as isolates of the same ST (e.g. in an outbreak investigation). For distantly related isolates, one could consider using  [Fast-GeP](https://github.com/jizhang-nz/fast-GeP), as the running time of GeP would increase dramatically due to frequent calling of BLASTX to find alleles of greater genetic variation.
 
 ## Prerequisites
-Before start, you need to make sure the following three programs were full functional in your system:
+Before start, you need to make sure the following three programs were fully functional in your system:
    * [BLAST+](https://ftp.ncbi.nlm.nih.gov/blast/executables/blast+/LATEST/)
    * [MAFFT](https://mafft.cbrc.jp/alignment/software/)
    
